@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Calculatrice basique</title>
+  </head>
+  <body>
+    <script>
+      const firstValue = prompt("Premier nombre ?");
+      const operator = prompt("Quelle opération ?");
+      const secondValue = prompt("Deuxième nombre ?");
+
+      if (operator === "+") {
+        const result = parseInt(firstValue) + parseInt(secondValue);
+
+        console.log(result);
+      } else if (operator === "-") {
+        const result = parseInt(firstValue) - parseInt(secondValue);
+
+        console.log(result);
+      } else if (operator === "*") {
+        const result = parseInt(firstValue) * parseInt(secondValue);
+
+        console.log(result);
+      } else if (operator === "/") {
+        const result = parseInt(firstValue) / parseInt(secondValue);
+
+        console.log(result);
+      } else {
+        console.log("Opération inconnue");
+      }
+    </script>
+  </body>
+</html>

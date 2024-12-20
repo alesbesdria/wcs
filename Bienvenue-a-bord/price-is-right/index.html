@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Calculatrice basique</title>
+</head>
+
+<body>
+    <script>
+        let name = prompt("Quel est votre nom ?");
+        // let takenbr = prompt("Saisissez un chiffre entre 1 et 100 !");
+        let takenbr = 0;
+        // const rightPrice = Math.ceil(Math.random() * 100);
+        const rightPrice = Math.ceil(Math.random() * 100);
+
+
+        while (takenbr != rightPrice) {
+            takenbr = prompt("Saisissez un chiffre entre 1 et 100 !");
+
+            if (rightPrice > takenbr) {
+                console.log("C'est plus!");
+
+            } else if (rightPrice < takenbr) {
+                console.log("C'est moins!");
+
+            } else {
+                console.log("Bravo " + name + " tu as gagné !");
+            }
+        }
+    </script>
+</body>
+
+</html>

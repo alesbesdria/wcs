@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+    --purple : #A306B6;
+    --white : #ffffff;
+    --grey : #D9D9D9;
+    --montserrat : "Montserrat";
+    --source : "Source Sans 3";
+}
+
+*{
+    /* overflow: hidden; */
+    margin: 0px;
+}
+
+header{
+    background-color: var(--purple);
+    color: var(--white);
+    height: 50%;
+}
+
+h1, h2, h3{
+    font-family: var(--montserrat);
+}
+
+h1{
+    width: 150px;
+}
+
+h2{
+    color: var(--purple);
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+p, a{
+    font-family: var(--source);
+}
+
+.lienread{
+    background-color: var(--purple);
+    border-radius: 10px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 3px;
+    font-size: 12px;
+}
+
+.grey{
+    background-color: var(--grey);
+
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--montserrat);
+    font-weight: bold;
+    width: 250px;
+    height: 250px;
+}
+
+.imgarticles{
+    width: 200px;
+    height: 200px;
+}
+
+.articletitle{
+margin: 5px;
+}
+
+.mefimgarticles{
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.logonav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 5%;
+    padding-left: 10px;
+}
+
+.welcomeavatar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.avatar{
+    border-radius: 50%;
+    height: 150px;
+    border: 4px white solid;
+}
+
+.menu{
+    display: flex;
+    margin: 10px;
+}
+
+.menu li{
+    margin: 10px;
+}
+
+.about{
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+ .sectionabout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey);
+    padding: 20px;
+}
+
+
+/* ////////////////MEDIAQUERIES///////////////// */
+
+@media screen and (max-width: 992px){
+    *{
+        overflow-x: hidden;
+    }
+    .logonav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .welcomeavatar{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .menu{
+        padding: 0px;
+    }
+    .logo{
+        margin-top: 5px;
+        padding-left: 0px;
+    }
+    h1{
+        margin: 10px;
+    }
+    .mefimgarticles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .articletitle{
+        overflow-y: hidden;
+    }
+    .about{
+        width: 80%;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- À partir d'un tableau contenant des noms de personnes tu vas devoir:
+
+    Crée une fonction qui contient la logique pour ré-écrire ces noms afin de convertir un nom comme anTHoNY en Anthony.
+    Une fonction qui accepte deux paramètres : un tableau et une fonction de rappel qui est chargée de refactoriser tous les éléments à l'intérieur de ce tableau
+    Renvoyer le tableau original mais avec tous les noms correctement tapés -->
+
+    <script>
+        const people = ['JoHn', 'ChrISTiana', 'anThoNY', 'MARia', 'jaMeS', 'MIChaEl', 'jeNNIFeR'];
+
+        const lowerCasePeople = people.map(person => person.toLowerCase());
+        console.log("Lowercase People:", lowerCasePeople);
+
+        function capitalize(tab) {
+            const newTab = tab.map(name => {
+                return name.charAt(0).toUpperCase() + name.slice(1); 
+            });
+            return newTab;
+        }
+
+        const capitalizedPeople = capitalize(lowerCasePeople);
+        console.log("Capitalized People:", capitalizedPeople);
+
+    </script>
+</body>
+
+</html>
