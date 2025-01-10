@@ -81,3 +81,17 @@ animalsToAdopt.forEach((animal) => {
   createCard(animal);
 });
 
+// let result = ['$'];
+  
+// let split = amount.toString().split("");
+
+// if (amount != ''){
+// for (const element of split){
+//   if (element != "."){
+//     result += result.push(".");
+//   }
+//   result += result.push(element);
+// }
+// }
+ 
+// return result.join();
