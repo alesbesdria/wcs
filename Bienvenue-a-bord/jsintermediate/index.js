@@ -80,3 +80,4 @@ function createCard(animal) {
 animalsToAdopt.forEach((animal) => {
   createCard(animal);
 });
+
