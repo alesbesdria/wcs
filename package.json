@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "chalk": "^5.4.1"
+    "chalk": "^5.4.1",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
   }
 }
